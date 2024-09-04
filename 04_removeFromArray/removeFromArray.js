@@ -1,7 +1,7 @@
 const removeFromArray = function (list, ...removeValues) {
   let removeArray = list.filter((value) => {
     for (removeValue of removeValues) {
-      if (value == removeValue) {
+      if (value === removeValue) {
         return false;
       }
     }
