@@ -1,5 +1,12 @@
-const removeFromArray = function (list, removeValue) {
-  let removeArray = list.filter((value) => value != removeValue);
+const removeFromArray = function (list, ...removeValues) {
+  let removeArray = list.filter((value) => {
+    for (removeValue of removeValues) {
+      if (value == removeValue) {
+        return false;
+      }
+    }
+    return true;
+  });
   return removeArray;
 };
 
