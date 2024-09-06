@@ -3,7 +3,10 @@ const convertToCelsius = function (temp) {
   return tempCelcius;
 };
 
-const convertToFahrenheit = function () {};
+const convertToFahrenheit = function (temp) {
+  let tempFahrenheit = temp * (9 / 5) + 32;
+  return tempFahrenheit;
+};
 // Do not edit below this line
 module.exports = {
   convertToCelsius,
