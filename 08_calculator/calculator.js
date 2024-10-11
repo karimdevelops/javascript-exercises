@@ -6,7 +6,10 @@ const subtract = function (x, y) {
   return x - y;
 };
 
-const sum = function () {};
+const sum = function (operands) {
+  return operands.reduce((total, current) => (total += current), 0);
+};
+
 const multiply = function () {};
 
 const power = function () {};
