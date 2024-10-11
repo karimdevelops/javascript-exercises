@@ -18,7 +18,13 @@ const power = function (x, y) {
   return x ** y;
 };
 
-const factorial = function () {};
+const factorial = function (x) {
+  let facNums = [];
+  for (let i = 1; i <= x; i++) {
+    facNums.push(i);
+  }
+  return facNums.reduce((total, current) => total * current, 1);
+};
 
 // Do not edit below this line
 module.exports = {
