@@ -1,8 +1,5 @@
 const getTheTitles = function (arr) {
-  return arr.reduce((accumulator, object) => {
-    accumulator.push(object.title);
-    return accumulator;
-  }, []);
+  return arr.map((book) => book.title);
 };
 
 // Do not edit below this line
