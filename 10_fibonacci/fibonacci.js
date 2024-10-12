@@ -1,5 +1,13 @@
-const fibonacci = function() {
-
+const fibonacci = function (x) {
+  let fibarr = [];
+  for (let i = 0; i <= x; i++) {
+    if (fibarr.length === 0) {
+      fibarr.push(0, 1);
+    } else if (i > 1) {
+      fibarr[i] = fibarr[i - 1] + fibarr[i - 2];
+    }
+  }
+  return fibarr[x];
 };
 
 // Do not edit below this line
