@@ -1,4 +1,6 @@
 const fibonacci = function (x) {
+  if (x < 0) return "OOPS";
+
   let fibarr = [];
   for (let i = 0; i <= x; i++) {
     if (fibarr.length === 0) {
